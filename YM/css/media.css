@@ -1,0 +1,258 @@
+@media (max-width: 767px) {
+  nav .left {
+    display: none;
+  }
+  nav .right {
+    float: none;
+    width: 100%;
+  }
+  nav .right .social {
+    justify-content: space-between;
+  }
+  nav .right .social li a {
+    border: none;
+  }
+  .header-text {
+    display: none;
+  }
+
+  .container-media-mobile {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    left: -50%;
+    top: 52px;
+    background-color: var(--main-color);
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+  }
+  .container-media-mobile.show {
+    /* transform: translateX(5%);
+    -webkit-transform: translateX(5%);
+    -moz-transform: translateX(5%);
+    -ms-transform: translateX(5%);
+    -o-transform: translateX(5%); */
+    left: 0;
+  }
+  .container-media-mobile .logo {
+    margin: 3rem 2.7rem;
+  }
+  .container-media-mobile .close {
+    position: absolute;
+    color: var(--main-color);
+    cursor: pointer;
+    display: block;
+    top: -3px;
+    right: -31px;
+  }
+  .overlay .links {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin: 2px 130px; */
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .overlay .links li a {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .links li.active a {
+    color: #dcedc8;
+  }
+  .request {
+    text-align: center;
+  }
+  .request .req-content {
+    display: block;
+  }
+  .req-content .btn {
+    margin-top: 10px;
+  }
+  .services .serv-boxs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .serv-boxs .box {
+    text-align: center;
+  }
+
+  .solution-content {
+    display: block;
+  }
+
+  .solution-text,
+  .solu-counters,
+  .inputs input {
+    width: 100%;
+  }
+
+  .solu-counters {
+    margin-top: 2rem;
+    padding: 0;
+    align-content: center;
+  }
+
+  .solu-counters .counter {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .solu-counters .counter:nth-child(1),
+  .solu-counters .counter:nth-child(3) {
+    margin-right: 0;
+  }
+  /* we are  */
+  .we-content {
+    display: block;
+    text-align: center;
+  }
+  .we-img,
+  .we-text {
+    width: 100%;
+  }
+  /* say  */
+  .say-content {
+    display: block;
+  }
+  .say-box {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .inputs {
+    display: block;
+  }
+
+  .inputs input {
+    margin-bottom: 2rem;
+  }
+
+  .contact-box textarea {
+    margin-top: 0;
+  }
+
+  /* logo  */
+  .logo-content {
+    display: block;
+  }
+
+  .logo-content .logo {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .footer-content {
+    display: block;
+  }
+
+  .footer-content .footer-box {
+    width: 100%;
+  }
+
+  .footer-content .footer-box:not(:last-of-type) {
+    border-bottom: 1px solid #dcedc8;
+  }
+
+  .footer-social {
+    justify-content: space-evenly;
+    margin: 2rem 0;
+  }
+
+  .useful-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+
+  .footer-form .btn {
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    padding: 1rem;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+  .overlay .logo {
+    float: none;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .overlay .links {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .home .header-text {
+    display: none;
+  }
+
+  .request .req-content .btn {
+    padding: 0.8rem 1.3rem;
+    /* font-size: 20px; */
+    font-weight: bold;
+  }
+  .solution-content {
+    display: block;
+  }
+
+  .solution-text,
+  .solu-counters,
+  .inputs input {
+    width: 100%;
+  }
+
+  .solu-counters {
+    margin-top: 2rem;
+    padding: 0;
+    align-content: center;
+  }
+
+  .solu-counters .counter {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .solu-counters .counter:nth-child(1),
+  .solu-counters .counter:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .solution-content {
+    display: block;
+  }
+
+  .solution-text,
+  .solu-counters,
+  .inputs input {
+    width: 100%;
+  }
+
+  .solu-counters {
+    margin-top: 2rem;
+    padding: 0;
+    align-content: center;
+  }
+
+  .solu-counters .counter {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .solu-counters .counter:nth-child(1),
+  .solu-counters .counter:nth-child(3) {
+    margin-right: 0;
+  }
+}

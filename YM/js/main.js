@@ -66,27 +66,27 @@ links.forEach(link => {
     })
 })
 
-let data = {
+// let data = {
     
-}
+// }
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    emailjs.send(
-      'service_8x362kb',
-      'template_i9eeiy3',
-      toSend,
-      '3J4vCZ-g9GKE3tFLQ'
-    )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
-      });
-    console.log(toSend)
-    window.scroll(0,0);
-  };
+//   const onSubmit = (e) => {
+//     e.preventDefault();
+//     emailjs.send(
+//       'service_8x362kb',
+//       'template_i9eeiy3',
+//       toSend,
+//       '3J4vCZ-g9GKE3tFLQ'
+//     )
+//       .then((response) => {
+//         console.log('SUCCESS!', response.status, response.text);
+//       })
+//       .catch((err) => {
+//         console.log('FAILED...', err);
+//       });
+//     console.log(toSend)
+//     window.scroll(0,0);
+//   };
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });

@@ -109,7 +109,7 @@ nav .right .social li a {
 }
 .overlay .logo  {
   float: left;
-  color: var(--second-color);
+  color: var(--main-color);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3rem;

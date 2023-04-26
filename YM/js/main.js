@@ -66,29 +66,30 @@ links.forEach(link => {
     })
 })
 
-// let data = {
-    
-// }
 
-//   const onSubmit = (e) => {
-//     e.preventDefault();
-//     emailjs.send(
-//       'service_8x362kb',
-//       'template_i9eeiy3',
-//       toSend,
-//       '3J4vCZ-g9GKE3tFLQ'
-//     )
-//       .then((response) => {
-//         console.log('SUCCESS!', response.status, response.text);
-//       })
-//       .catch((err) => {
-//         console.log('FAILED...', err);
-//       });
-//     console.log(toSend)
-//     window.scroll(0,0);
-//   };
+function sendMail(e){
+    e.preventDefault();
+    let params = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value,
+    };
+    const serviceID = "service_6rkjj4x";
+    const templateID = "template_hefk22a";
 
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-    
-  };
+    emailjs
+    .send(serviceID, templateID,params)
+    .then((res)=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your mail send successfully!");
+        window.scrollTo(0, 0)
+    })
+    .catch((err)=>{
+        console.log(err);
+        alert("error");
+    })
+}
+

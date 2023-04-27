@@ -45,7 +45,6 @@ window.onscroll = () => {
 }
 scrollTopBtn.onclick = () => {
     window.scrollTo(0, 0)
-
 }
 
 

@@ -35,6 +35,8 @@ window.addEventListener("scroll", function () {
         })
     }
 })
+
+
 // Show Scroll Up Btn
 window.onscroll = () => {
     if (this.scrollY > 300) {
@@ -88,7 +90,7 @@ function sendMail(e){
     })
     .catch((err)=>{
         console.log(err);
-        alert("error");
+        alert("Opps! Something went wrong!");
     })
 }
 

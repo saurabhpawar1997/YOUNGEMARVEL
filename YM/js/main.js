@@ -31,7 +31,7 @@ window.addEventListener("scroll", function () {
                 if (i == item.getAttribute("data-number")) {
                     clearInterval(countDown);
                 }
-            }, 10)
+            }, 20)
         })
     }
 })

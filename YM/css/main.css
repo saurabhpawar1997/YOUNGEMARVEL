@@ -242,6 +242,12 @@ nav .right .social li a {
 .box .box-img img {
   width: 100%;
 }
+.box-img1 img {
+  width: 40%;
+}
+.box-img2 img {
+  width: 70%;
+}
 .box .serv-body {
   padding: 1.2rem;
 }
@@ -366,6 +372,7 @@ nav .right .social li a {
 .we-img img {
   width: 100%;
   height: 100%;
+  background-color: var(--second-color);
 }
 .we-text {
   padding: 3rem;
@@ -422,6 +429,7 @@ nav .right .social li a {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+  /* border: 1px solid red; */
 }
 .say-box {
   width: 48%;
@@ -554,7 +562,7 @@ nav .right .social li a {
 }
 
 .footer-content .footer-box {
-  width: 24%;
+  width:30%;
 }
 
 .footer-title {

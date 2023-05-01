@@ -538,12 +538,14 @@ nav .right .social li a {
 
 .logo-content {
   display: grid;
-  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-columns: 47% 47%;
   justify-content: space-between;
+  /* gap: 2%; */
 }
 
 .logo-content .logo img {
   width: 100%;
+  border-radius: 11%;
 }
 
 /* End Logo Text */

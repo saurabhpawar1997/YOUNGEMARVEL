@@ -236,6 +236,18 @@ nav .right .social li a {
   grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
 }
+.serv-boxs .box{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.serv-boxs .box :hover{
+  color: var(--main-color);
+  cursor: default;
+}
 .serv-boxs .box {
   background-color: #f7f7f7;
 }
@@ -437,6 +449,21 @@ nav .right .social li a {
   padding: 1rem;
   background-color: #fff;
   text-align: center;
+  /* &:hover{
+    border: 4px solid var(--second-color);
+  } */
+}
+.say-box {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.say-box :hover{
+  color: var(--main-color);
+  cursor: default;
 }
 .box-name {
   font-size: 2rem;
@@ -477,6 +504,9 @@ nav .right .social li a {
   text-transform: uppercase;
   font-size: 1.1rem;
 }
+.contact-p :hover{
+  color: var(--main-color);
+}
 .contact-box {
   margin: 2rem 0 0 0;
   background-color: var(--main-color);
@@ -515,6 +545,7 @@ nav .right .social li a {
   border-radius: 1.5rem;
 }
 .contact-us .btn {
+  cursor: pointer;
   margin: auto;
   color: var(--second-color);
   background-color: var(--main-color);
@@ -547,6 +578,14 @@ nav .right .social li a {
 .logo-content .logo img {
   width: 100%;
   border-radius: 11%;
+}
+.logo img {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
 /* End Logo Text */
@@ -594,6 +633,9 @@ nav .right .social li a {
   margin-right: 0.5rem;
   padding: 0.6rem;
   border-radius: 50%;
+  &:hover{
+    background-color: var(--main-color);
+  }
 }
 
 .useful-links {
@@ -635,6 +677,7 @@ nav .right .social li a {
 .footer-form .btn {
   /*font-size: 0.9rem;
   */
+  cursor: pointer;
   padding: 10px 15px;
   border: none;
   color: var(--second-color);
@@ -644,6 +687,7 @@ nav .right .social li a {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  
 }
 
 footer {

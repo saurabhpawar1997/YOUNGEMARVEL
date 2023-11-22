@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
 :root {
   --main-color: #689f38;
   --second-color: #dcedc8;
@@ -44,6 +45,7 @@ nav {
   color: var(--second-color);
   z-index: 999;
 }
+
 nav .left {
   float: left;
   width: 50%;
@@ -51,25 +53,31 @@ nav .left {
   display: flex;
   font-weight: bold;
 }
+
 nav .left .clock {
   margin-right: 1.3rem;
 }
+
 nav .left .clock,
 nav .left .call {
   margin: 0;
   border-left: 1px solid var(--second-color);
   padding: 1rem;
 }
+
 nav .left .call {
   border-right: 1px solid var(--second-color);
 }
+
 nav .left .icon {
   margin-right: 5px;
 }
+
 nav .right {
   float: right;
   width: 50%;
 }
+
 nav .right .social {
   padding: 0;
   margin: 0;
@@ -97,6 +105,7 @@ nav .right .social li a {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .overlay {
   padding-top: 2rem;
   position: absolute;
@@ -107,13 +116,15 @@ nav .right .social li a {
   background-color: rgba(22, 22, 22, 0.6);
   z-index: 2;
 }
-.overlay .logo  {
+
+.overlay .logo {
   float: left;
   color: var(--main-color);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3rem;
 }
+
 .home .links {
   display: flex;
   justify-content: flex-end;
@@ -123,19 +134,23 @@ nav .right .social li a {
   align-items: center;
   list-style: none;
 }
+
 .links li a {
   text-decoration: none;
   font-size: 1.2rem;
   margin-left: 1.5rem;
   color: var(--second-color);
 }
+
 .links li.active a {
   color: var(--main-color);
   border-bottom: 2px solid var(--main-color);
 }
+
 .home .close {
   display: none;
 }
+
 .header-text {
   padding-top: 5rem;
   width: 50%;
@@ -144,10 +159,12 @@ nav .right .social li a {
   left: 15%;
   transform: translateY(-50%);
 }
+
 .header-text h2 {
   text-transform: uppercase;
   color: var(--main-color);
 }
+
 .header-text h1 {
   color: var(--second-color);
   margin: 0;
@@ -156,12 +173,14 @@ nav .right .social li a {
   text-transform: uppercase;
   line-height: 1.3;
 }
+
 .header-text p {
   color: var(--second-color);
   line-height: 1.2;
   font-size: 1.1rem;
   margin-top: 0.8rem;
 }
+
 .header-text .btn {
   color: var(--second-color);
   background-color: var(--main-color);
@@ -182,22 +201,26 @@ nav .right .social li a {
   padding: 2rem 0;
   color: var(--second-color);
 }
+
 .request .req-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .req-content h3 {
   font-weight: bold;
   font-size: 1.7rem;
   margin: 0;
 }
+
 .req-content p {
   line-height: 1.3;
   margin-top: 1rem;
   margin-bottom: 0;
   font-size: 1.2rem;
 }
+
 .req-content .btn {
   color: var(--socend-color);
   background-color: var(--main-color);
@@ -211,10 +234,12 @@ nav .right .social li a {
   font-size: 20px;
   font-weight: bold;
 }
+
 /* services  */
 .services {
   padding: 3rem 0;
 }
+
 .services h2 {
   text-align: center;
   text-transform: uppercase;
@@ -222,21 +247,25 @@ nav .right .social li a {
   margin: 0;
   font-size: 3rem;
 }
+
 .services h2 span {
   color: var(--main-color);
 }
+
 .services .serv-desc {
   text-align: center;
   color: var(--socend-color);
   font-size: 1.2rem;
 }
+
 .services .serv-boxs {
   margin-top: 2rem;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
 }
-.serv-boxs .box{
+
+.serv-boxs .box {
   overflow: hidden;
   transition: transform 0.3s ease;
 
@@ -244,41 +273,50 @@ nav .right .social li a {
     transform: scale(1.03);
   }
 }
-.serv-boxs .box :hover{
+
+.serv-boxs .box :hover {
   color: var(--main-color);
   cursor: default;
 }
+
 .serv-boxs .box {
   background-color: #f7f7f7;
 }
+
 .box .box-img img {
   width: 100%;
 }
+
 .box-img1 img {
   width: 40%;
 }
+
 .box-img2 img {
   width: 70%;
 }
+
 .box .serv-body {
   padding: 1.2rem;
 }
+
 .serv-body .box-title {
   font-size: 1.3rem;
   font-weight: bold;
   color: var(--dark-color);
 }
+
 .serv-body .box-text {
   color: var(--light-p);
   font-size: 1.1rem;
   line-height: 1.8;
 }
+
 .serv-body .btn,
 .solution-text .btn,
 .we-text .btn {
   cursor: pointer;
   color: var(--second-color);
-  background-color: var(--main-color);
+  background-color: var(--light-p);
   padding: 0.6rem 1.4rem;
   border: none;
   border-radius: 25px;
@@ -287,7 +325,7 @@ nav .right .social li a {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -299,22 +337,26 @@ nav .right .social li a {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .solutions .solu-overlay {
   padding: 5rem 0;
   width: 100%;
   height: 100%;
   background-color: rgba(23, 23, 23, 0.8);
 }
+
 .solutions .solution-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .solution-text {
   width: 50%;
   color: var(--second-color);
   padding-right: 3rem;
 }
+
 .solu-p-1,
 .solu-p-2,
 .solu-p-3 {
@@ -323,6 +365,7 @@ nav .right .social li a {
   line-height: 1.6;
   margin: 0;
 }
+
 .solu-p-3 {
   margin: 2rem 0;
 }
@@ -332,12 +375,15 @@ nav .right .social li a {
   font-weight: bold;
   line-height: 1.2;
 }
+
 .solu-title span {
   color: var(--main-color);
 }
+
 .solution-text .btn {
   margin: 2rem 0;
 }
+
 .solu-counters {
   width: 50%;
   display: flex;
@@ -345,6 +391,7 @@ nav .right .social li a {
   flex-wrap: wrap;
   padding-left: 5rem;
 }
+
 .counter {
   width: 46%;
   padding: 3rem;
@@ -354,16 +401,19 @@ nav .right .social li a {
   align-items: center;
   margin-bottom: 2rem;
 }
+
 .solu-counters .counter:nth-child(1),
 .solu-counters .counter:nth-child(3) {
   margin-right: 2rem;
 }
+
 .counter .number {
   font-size: 2rem;
   margin: 0;
   color: var(--main-color);
   font-weight: bold;
 }
+
 .counter .project-name {
   color: var(--second-color);
   font-size: 1.2rem;
@@ -375,22 +425,27 @@ nav .right .social li a {
 .we-are {
   margin: 5rem 0;
 }
+
 .we-content {
   display: flex;
 }
+
 .we-img,
 .we-text {
   width: 50%;
 }
+
 .we-img img {
   width: 100%;
   height: 100%;
   background-color: var(--second-color);
 }
+
 .we-text {
   padding: 3rem;
   background-color: var(--second-color);
 }
+
 .we-text .we-title {
   font-size: 2rem;
   font-weight: bold;
@@ -398,9 +453,11 @@ nav .right .social li a {
   color: var(--dark-color);
   margin: 0.5rem 0;
 }
+
 .we-title span {
   color: var(--main-color);
 }
+
 .we-p-1,
 .we-p-2,
 .we-p-3 {
@@ -421,6 +478,7 @@ nav .right .social li a {
   padding: 3rem 0;
   background-color: var(--second-color);
 }
+
 .say .say-title {
   font-size: 2rem;
   text-align: center;
@@ -429,21 +487,25 @@ nav .right .social li a {
   margin-bottom: 1rem;
   color: var(--dark-color);
 }
+
 .say-title span {
   color: var(--main-color);
 }
+
 .say-p-1 {
   text-align: center;
   color: var(--light-p);
   text-transform: uppercase;
   font-size: 1.1rem;
 }
+
 .say-content {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
   /* border: 1px solid red; */
 }
+
 .say-box {
   width: 48%;
   padding: 1rem;
@@ -453,6 +515,7 @@ nav .right .social li a {
     border: 4px solid var(--second-color);
   } */
 }
+
 .say-box {
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -461,23 +524,28 @@ nav .right .social li a {
     transform: scale(1.03);
   }
 }
-.say-box :hover{
+
+.say-box :hover {
   color: var(--main-color);
   cursor: default;
 }
+
 .box-name {
   font-size: 2rem;
   font-weight: bold;
   color: var(--dark-color);
   margin-bottom: 1rem;
 }
+
 .box-job {
   color: var(--main-color);
 }
+
 .p-box {
   color: var(--light-p);
   line-height: 1.6;
 }
+
 .box-img {
   font-size: 3rem;
   color: var(--light-p);
@@ -487,6 +555,7 @@ nav .right .social li a {
 .contact-us {
   padding: 3rem 0;
 }
+
 .contact-title {
   font-size: 2rem;
   text-align: center;
@@ -495,19 +564,23 @@ nav .right .social li a {
   margin-bottom: 1rem;
   color: var(--dark-color);
 }
+
 .contact-title span {
   color: var(--main-color);
 }
+
 .contact-p {
   text-align: center;
   color: var(--light-p);
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-.contact-p :hover{
+
+.contact-p :hover {
   color: var(--main-color);
   cursor: default;
 }
+
 .contact-box {
   margin: 2rem 0 0 0;
   background-color: var(--main-color);
@@ -518,10 +591,12 @@ nav .right .social li a {
   -ms-border-radius: 0.4rem;
   -o-border-radius: 0.4rem;
 }
+
 .inputs {
   display: flex;
   justify-content: space-between;
 }
+
 .inputs input {
   width: 30%;
   padding: 0.8rem 1rem;
@@ -535,6 +610,7 @@ nav .right .social li a {
 .contact-box textarea:focus {
   outline: none;
 }
+
 .contact-box textarea {
   padding: 1rem;
   width: 100%;
@@ -545,6 +621,7 @@ nav .right .social li a {
   border: none;
   border-radius: 1.5rem;
 }
+
 .contact-us .btn {
   cursor: pointer;
   margin: auto;
@@ -580,6 +657,7 @@ nav .right .social li a {
   width: 100%;
   border-radius: 15%;
 }
+
 .logo img {
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -605,7 +683,7 @@ nav .right .social li a {
 }
 
 .footer-content .footer-box {
-  width:30%;
+  width: 30%;
 }
 
 .footer-title {
@@ -634,7 +712,8 @@ nav .right .social li a {
   margin-right: 0.5rem;
   padding: 0.6rem;
   border-radius: 50%;
-  &:hover{
+
+  &:hover {
     background-color: var(--main-color);
   }
 }
@@ -688,7 +767,7 @@ nav .right .social li a {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  
+
 }
 
 footer {
